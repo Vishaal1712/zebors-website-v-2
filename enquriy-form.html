@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Send us an enquiry for web development, digital marketing, or design services.">
+    <title>Enquiry - Zebrows Technologies</title>
+    <link rel="icon" href="image/company-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+        #light-enquiry-section {
+            background-color: #f8f9fa;
+            padding: 120px 0;
+        }
+
+
+        .form-container-minimal {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 50px 60px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        }
+
+
+        .form-container-minimal .form-header {
+           text-align: left;
+           margin-bottom: 20px;
+        }
+        .form-container-minimal h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        .form-container-minimal p {
+            color: #6c757d;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        .form-container-minimal .red-underline {
+            height: 4px;
+            width: 70px;
+            background-color: #d92d20;
+            border-radius: 2px;
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+
+        /* Input Group: Label + Input */
+        .input-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .input-group label {
+            font-weight: 600;
+            color: #343a40;
+            font-size: 1rem;
+        }
+
+        .input-group input,
+        .input-group textarea,
+        .input-group select {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            background-color: transparent;
+            padding: 10px 0 8px 0;
+            font-size: 1.1rem;
+            color: #495057;
+            transition: border-color 0.3s ease;
+        }
+        
+        .input-group input:focus,
+        .input-group textarea:focus,
+        .input-group select:focus {
+            outline: none;
+            border-bottom-color: #d92d20; /* Red border on focus */
+        }
+        
+        .input-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        /* Dropdown Customization */
+         .input-group select {
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236c757d%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 5px top 50%;
+            background-size: .65em auto;
+        }
+
+        /* New Submit Button */
+        .submit-button-new {
+            background-color: #212529;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px; /* Pill shape */
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .submit-button-new:hover {
+            background-color: #000000;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        .submit-button-new .arrow-circle {
+            background-color: #fbc531; /* Yellow circle */
+            color: #212529;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <nav id="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Zebrows Technologies</a>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="enquiry.html" class="contact-button">Enquiry</a></li>
+                </ul>
+                <button id="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="light-enquiry-section">
+            <div class="container">
+                <div class="form-container-minimal">
+                    <div class="form-header">
+                        <h2>Enquiry Form</h2>
+                        <p>Have a project in mind? We'd love to hear from you.</p>
+                        <div class="red-underline"></div>
+                    </div>
+                    
+                    <form id="enquiry-form-light" action="https://formsphere.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="name">Your Name*</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Your Email*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                         <div class="form-group">
+                            <div class="input-group">
+                                <label for="phone">Your Phone Number*</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="service_interest">Select a Service*</label>
+                                <select id="service_interest" name="service_interest" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="Web Development">Web Development</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="Logo & Poster Design">Logo & Poster Design</option>
+                                    <option value="Video Editing">Video Editing</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="message">Tell us about your project...</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        
+                        <div style="text-align: left; margin-top: 30px;">
+                            <button type="submit" class="submit-button-new">
+                                <span>Send Enquiry</span>
+                                <span class="arrow-circle">&rarr;</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Zebrows Technologies. All Rights Reserved.</p>
+                <div class="social-links">
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
